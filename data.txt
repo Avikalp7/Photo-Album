@@ -1,0 +1,8 @@
+NEW PHOTO
+SRC
+F:\Avikalp7\Pictures\Hayley\Hayley williams (1).jpg
+TITLE
+a
+ANNOTATION
+a
+xx- END OF PHOTO -xx
