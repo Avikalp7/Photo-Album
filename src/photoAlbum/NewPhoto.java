@@ -28,22 +28,7 @@ public class NewPhoto extends JFrame {
 	private JLabel label_1;
 	private JLabel label_2;
 	String Name;
-	/**
-	 * Launch the application.
-	 */
-/*	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					NewPhoto frame = new NewPhoto();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}*/
-
+	
 	/**
 	 * Create the frame.
 	 */
@@ -132,9 +117,6 @@ public class NewPhoto extends JFrame {
 				Name = MainFrame.photos.get(idx).src;
 				textField.setText(MainFrame.photos.get(idx).title);
 				textArea.setText(MainFrame.photos.get(idx).annotation);
-			//	NewPhoto nPhoto = new NewPhoto(MainFrame.photos.get(idx).src,2);
-			//	nPhoto.setVisible(true);
-			//	dispose();
 			}
 		});
 		label_1.setBounds(14, 290, 46, 37);
@@ -151,9 +133,6 @@ public class NewPhoto extends JFrame {
 				textField.setText(MainFrame.photos.get(idx).title);
 				textArea.setText(MainFrame.photos.get(idx).annotation);
 				Name = MainFrame.photos.get(idx).src;
-			//	NewPhoto nPhoto = new NewPhoto(MainFrame.photos.get(idx).src,2);
-			//	nPhoto.setVisible(true);
-			//	dispose();
 			}
 		});
 		label_2.setBounds(701, 290, 46, 37);
@@ -172,7 +151,6 @@ public class NewPhoto extends JFrame {
 			textArea.setText(MainFrame.photos.get(idx).annotation);
 			textArea.setEditable(false);
 			btnSaveExit.setVisible(false);
-			//btnExitWoSaving.setVisible(false);
 			
 		}
 		else if(i==1)

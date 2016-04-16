@@ -28,7 +28,6 @@ public class MainFrame {
 	static ArrayList <Photo> photos = new ArrayList <Photo>();
 	
 	
-	
 	/**
 	 * Launch the application.
 	 */
