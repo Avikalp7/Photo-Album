@@ -21,13 +21,8 @@ import java.awt.event.ActionEvent;
 public class MainFrame {
 
 	private JFrame frame;
-//	static JLabel lab, label_1, label_2, label_3, label_4, label_5, label_6, label_7, label_8, label_9, label_10;  
-//	static JLabel title_0, title_1, title_2, title_3, title_4, title_5, title_6, title_7, title_8, title_9, title_10;  
-//	static JLabel[] label = {lab, label_1, label_2, label_3,label_4, label_5, label_6, label_7, label_8, label_9, label_10};
 	static JLabel[] label = new JLabel [11]; 
 	static JLabel[] title = new JLabel [11];
-//	static JLabel[] title = {title_0, title_1, title_2, title_3,title_4, title_5, title_6, title_7, title_8, title_9, title_10}; 
-//	static JLabel[] remove;
 	JButton btnNewButton;
 	
 	static ArrayList <Photo> photos = new ArrayList <Photo>();
@@ -632,15 +627,11 @@ public class MainFrame {
 	{
 		for(int i=1;i<=photos.size();i++)
 		{
-			//label[i] = new JLabel("No Image");
-			//label[i].setHorizontalAlignment(SwingConstants.CENTER);
 			label[i].setToolTipText("" + photos.get(i-1).annotation);
 		}
 		
 		for(int i=photos.size()+1;i<=10;i++)
 		{
-			//label[i] = new JLabel("No Image");
-			//label[i].setHorizontalAlignment(SwingConstants.CENTER);
 			label[i].setToolTipText("");
 		}
 	}
