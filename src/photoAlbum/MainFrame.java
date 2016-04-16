@@ -626,15 +626,22 @@ public class MainFrame {
 			label[i+1].setText("No Image");
 			title[i+1].setText("");
 		}
+		updateToolTip();
 	}
 	public static void updateToolTip()
 	{
-		for(int i=1;i<=10;i++)
+		for(int i=1;i<=photos.size();i++)
 		{
 			//label[i] = new JLabel("No Image");
 			//label[i].setHorizontalAlignment(SwingConstants.CENTER);
-			if(i<=photos.size())
 			label[i].setToolTipText("" + photos.get(i-1).annotation);
+		}
+		
+		for(int i=photos.size()+1;i<=10;i++)
+		{
+			//label[i] = new JLabel("No Image");
+			//label[i].setHorizontalAlignment(SwingConstants.CENTER);
+			label[i].setToolTipText("");
 		}
 	}
 }
