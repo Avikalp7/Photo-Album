@@ -613,8 +613,13 @@ public class MainFrame {
 			SetImageSize(label[i+1],photos.get(i).src);
 			label[i+1].setText("");
 			title[i+1].setText(photos.get(i).title);
-			save();
 		}
+		/*
+		 * Moving save() from for loop to outside of it to improve efficiency and 
+		 * remove bug that prevented update of info in data.txt upon last remaining 
+		 * image deletion  
+		 */
+		save();
 		for(int i=photos.size();i<10;i++)
 		{
 			SetImageSize(label[i+1],null);
