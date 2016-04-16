@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.Image;
 import java.util.*;
 import javax.swing.*;
-
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -330,7 +330,9 @@ public class MainFrame {
 		btnNewButton = new JButton("Add New Image");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				FileNameExtensionFilter filter = new FileNameExtensionFilter("Image Files", "jpg", "png", "gif", "jpeg");
 				JFileChooser jfc = new JFileChooser();
+				jfc.setFileFilter(filter);
 				if(jfc.showOpenDialog(btnNewButton) == JFileChooser.APPROVE_OPTION)
 				{
 					if(photos.size()>=10)
